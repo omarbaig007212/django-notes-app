@@ -26,6 +26,13 @@ pipeline{
                 }
             }
         }
+        stage("Push to DockerHub"){
+            steps{
+                script{
+                    docker_push("nodes","latest")
+                }
+            }
+        }
         // stage("Push to DockerHub"){
         //     steps{
         //         script{
