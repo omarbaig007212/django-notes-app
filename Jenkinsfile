@@ -19,14 +19,13 @@ pipeline{
                 }
             }
         }
-        
-        // stage("Build"){
-        //     steps{
-        //         script{
-        //         docker_build("notes-app","latest","trainwithshubham")
-        //         }
-        //     }
-        // }
+        stage("dockerBuild"){
+            steps{
+                script{
+                    docker_build("nodes","latest","bulletstorm1")
+                }
+            }
+        }
         // stage("Push to DockerHub"){
         //     steps{
         //         script{
