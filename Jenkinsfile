@@ -12,6 +12,13 @@ pipeline{
                 }
             }
         }
+        stage("Code"){
+            steps{
+                script{
+                    code("https://github.com/omarbaig007212/django-notes-app.git","main")
+                }
+            }
+        }
         // stage("Code"){
         //     steps{
         //        script{
