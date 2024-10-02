@@ -1,5 +1,5 @@
-def code(url,branch){
+def code(url, branch) {
   echo "Getting the git"
-  git url:"${url}",branch:"${branch}"
-  echo "DOne"
+  git url: "${url}", branch: "${branch}"
+  echo "Done"
 }
