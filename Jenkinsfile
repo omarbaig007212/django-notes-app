@@ -29,7 +29,7 @@ pipeline{
         stage("Push to DockerHub"){
             steps{
                 script{
-                    docker_push("nodes","latest")
+                    docker_push("bulletstorm1","nodes","latest")
                 }
             }
         }
